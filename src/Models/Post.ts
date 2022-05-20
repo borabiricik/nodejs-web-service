@@ -20,7 +20,7 @@ const Post = db.define("Post", {
   },
 });
 
-Post.belongsToMany(Category,{through:"Post_Category"});
+Post.belongsTo(Category);
 Post.belongsTo(User)
 
 export default Post;
